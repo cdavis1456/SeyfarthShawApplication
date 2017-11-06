@@ -1,0 +1,258 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Auditor's Request</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/form.css">
+    </head>
+
+    <body>
+        
+        <div class="container">
+
+          <!--Header Row-->
+          <div class="row">
+           <h1 id="head1">Auditor's Request</h1>
+          </div>
+
+  <!--Section A-->
+
+  <!--Form Instructions-->
+  <div class="row">
+   <p>(a) Account Receivable Balance (unpaid bills on date client's audit closes.)</p>
+
+   <!--Form Start-->
+   <form class="form">
+
+    <div class="form-group">
+
+     <!--First Column-->
+
+     <div class="col-md-3">
+      <label for="text"> Client Name/Client Number:</label>
+      <input list="list" class="form-control" id="cname">
+			 <datalist>
+				 <option value="Edward Reynosa">
+				 <option value="James Dean">
+					 <option value="Dawn Moore">
+						 <option value="Troy Walden">
+							 <option value="Veronica Medeiros">
+								 <option value="Pamela Wellman">
+			 </datalist>
+     </div>
+
+     <!--Second Column-->
+
+     <div class="col-md-3">
+      <label for="text">Amount of Unpaid Bills(A/R):</label>
+      <input type="text" class="form-control mtext" id="abills">
+     </div>
+
+     <!--Third Column-->
+
+     <div class="col-md-2">
+      <button type="button" class="btn btn-primary" id="addbtn">Add</button>
+     </div>
+
+     <!--Fourth Column-->
+     <div class="col-md-4">
+      <label for="textarea">Client/Matter Number</label>
+      <label for="textarea"> Amount of Unpaid Bills</label>
+      <input type="textarea" class="form-control marea" name="mtable">
+     </div>
+
+    </div>
+
+   </form>
+  </div>
+
+  <!--Section B-->
+     
+     
+  <div class="row">
+   <p>(b) Work in Progress(value of unbilled time/disbursements as date called by agent)</p>
+   <form class="form">
+
+    <!--First Column-->
+
+    <div class="form-group">
+     <div class="col-md-5">
+      <label for="text"> Amount of Unpaid Time/Disbursement(WIP)</label>
+      <input type="text" class="form-control mtext">
+     </div>
+
+     <!--Second Column-->
+     <div class="col-md-2">
+      <button type="button" class="btn btn-primary">Add</button>
+     </div>
+
+
+     <div class="col-md-5">
+      <label for="textarea">Client/Matter Number</label>
+      <label for="textarea">Amount of Unpaid Time(WIP)</label>
+      <input type="textarea" class="form-control marea">
+     </div>
+
+    </div>
+
+
+   </form>
+
+  </div>
+
+  <!--Section B Part 3-->
+
+  <div class="row">
+
+   <form class="form">
+
+    <!--First Column-->
+
+    <div class="col-md-6">
+     <label for="text">Status</label>
+     <input type="text" class="form-control" id="mstatus">
+    </div>
+
+    <!--Second Column-->
+
+    <div class="col-md-6">
+     <label class="date">Audit Due Date</label>
+     <input type="date" class="form-control mdate">
+    </div>
+
+   </form>
+
+  </div>
+
+  <!--Section B Part 4-->
+
+  <div class="row">
+
+   <form class="form">
+
+    <!--First Column-->
+    <div class="col-md-4">
+    </div>
+
+    <!--Second Column-->
+    <div class="col-md-4">
+     <label for="date">Date</label>
+    </div>
+
+    <!--Third Column-->
+    <div class="col-md-4">
+     <label for="checkbox">Acknowledge</label>
+    </div>
+
+   </form>
+
+  </div>
+
+  <!--Checklist Rows-->
+
+  <form class="form" id="bform">
+
+   <div class="row">
+
+    <div class="col-md-4">
+     <p>Obtain a list of all client number associate with client name</p>
+    </div>
+    <div class="col-md-4">
+     <input type="date" class="form-control" id="date">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+
+   <div class="row">
+    <div class="col-md-4">
+     <p>Obtain list of all matters including description hours worked/value</p>
+    </div>
+
+    <div class="col-md-4">
+     <input type="date" class="form-control">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-4">
+     <p>Obtain a list of total hours worked during audit period for timekeepers</p>
+    </div>
+    <div class="col-md-4">
+     <input type="date" class="form-control">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-4">
+     <p>Provide financial data request(A/R & WIP)</p>
+    </div>
+
+    <div class="col-md-4">
+     <input type="date" class="form-control">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-4">
+     <p>Include client in adjust log</p>
+    </div>
+
+    <div class="col-md-4">
+     <input type="date" class="form-control">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-4">
+     <p>Order record card or equivalent</p>
+    </div>
+    <div class="col-md-4">
+     <input type="date" class="form-control">
+    </div>
+    <div class="col-md-4">
+     <input type="checkbox" class="form-control">
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-4">
+     <form class="form-inline">
+      <label for="text">Name:</label>
+      <input type="text" class="form-control">
+     </form>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-7"></div>
+    <div class="col-md-5">
+     <div class="btn-group">
+      <button type="button" class="btn btn-danger">Clear</button>
+         <a href=""><button type="button" class="btn btn-success">Save/Close</button></a>
+      <a href="email2.html"><button type="button" class="btn btn-info">Send</button>
+     </div>
+    </div>
+   </div>
+
+  </form>
+
+
+ </div>
+</body>
+
+</html>
